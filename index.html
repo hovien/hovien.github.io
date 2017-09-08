@@ -4,7 +4,7 @@
 <title>Vivien Holecz portfolio</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -32,19 +32,22 @@ body, html {
         background-attachment: scroll;
     }
 }
-.own-theme-medium {color:#cfc5b4 !important;background-color:#f3ede4 !important}
+.own-theme-medium {color:#B299A0!important;background-color:#F6F1F2 !important}
 .own-theme-hover:hover{opacity:0.5}
 .own-theme-contrast{color:#F6EFE6 !important;background-color:#AC9D89 !important}
-.own-theme-red{color:#f3ede4; background-color:#a70a37}
-.own-theme-red-contrast{color:#f3ede4 !important;background-color:#63001c !important}
+.own-theme-red{color:#f3ede4; background-color:#CE1D50}
+.own-theme-secondary{color:#f3ede4 !important;background-color:#B299A0 !important}
 .own-theme-dark-contrast{color:#f3ede4 !important;background-color:#cfc5b4 !important}
-.own-theme-light {color:#AC9D89 !important;background-color:#fcfaf7 !important}
-.own-theme-dark {color:#fcfaf7 !important;background-color:#cfc5b4 !important}
+.own-theme-light {color:#B299A0 !important;background-color:#FBF7F8 !important}
+.own-theme-dark {color:#FBF7F8 !important;background-color:#B299A0	 !important}
 .own-theme-red{color:#fcfaf7 !important;background-color:#A70A37 !important}
 .own-theme-light-title{color:#fcfaf7 !important;font-weight:900}
+.own-theme-medium-text{color:#F3EDE4}
 .own-theme-light-text{color:#fcfaf7}
 .own-theme-dark-text{color:#cfc5b4}
 .own-theme-red-text{color:#CE1D50}
+.own-theme-med-grey{background-color:#BEB3B6}
+.own-theme-med-grey-text{color:#BEB3B6}
 .bold{font-weight: 900;}
 </style>
 </head>
@@ -54,18 +57,19 @@ body, html {
 <div class="w3-top">
    <div class="w3-bar own-theme-medium w3-card-2">
      <a class="w3-bar-item w3-button w3-padding-large w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-     <a href="#" class="w3-bar-item w3-button  w3-padding-large w3-left w3-wide bold"><span style="color:#CE1D50">Vivien Holecz </span><span class="w3-hide-small">aspiring data scientist</span></a>
-     <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-right w3-hide-small w3-hide-medium"><b>contact</b></a>
-     <a href="#cv" class="w3-bar-item w3-button w3-padding-large w3-right w3-hide-small w3-hide-medium"><b>CV</b></a>
-     <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-right w3-hide-small w3-hide-medium"><b>about</b></a>
-     <a href="#" class="w3-bar-item w3-button w3-padding-large w3-right w3-hide-small w3-hide-medium"><b>projects</b></a>
+     <a href="#" class="w3-bar-item w3-button  w3-padding-large w3-left"><span class="w3-wide bold" style="color:#CE1D50">Vivien Holecz </span><span class="w3-hide-small"><i>aspiring data scientist</i></span></a>
+     <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-right w3-hide-small "><b>contact</b></a>
+     <a href="#cv" class="w3-bar-item w3-button w3-padding-large w3-right w3-hide-small"><b>CV</b></a>
+     <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-right w3-hide-small"><b>about</b></a>
+     <a href="#" class="w3-bar-item w3-button w3-padding-large w3-right w3-hide-small"><b>projects</b></a>
    </div>
 </div>
 <!-- Navbar on small screens -->
-<div id="navDemo" class="w3-bar-block own-theme-medium w3-hide w3-hide-large w3-top" style="margin-top:46px">
+<div id="navDemo" class="w3-bar-block own-theme-medium w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-center"><b>contact</b></a>
    <a href="#cv" class="w3-bar-item w3-button w3-padding-large w3-center"><b>CV</b></a>
    <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-center"><b>about</b></a>
+   <a href="#" class="w3-bar-item w3-button w3-padding-large w3-center"><b>projects</b></a>
  </div>
 
 <!-- Area chart with self portrait and name -->
@@ -83,31 +87,31 @@ body, html {
   <h2 class="w3-center own-theme-light-text bold w3-padding-small"> My Projects</h2>
    <div class="w3-cell-row" style="margin-top:36px">
     <div class="w3-container w3-center w3-cell w3-mobile" style="margin-bottom:62px">
-      <i class="fa fa-html5" style="font-size:36px"></i>
-      <h5 class="bold">HTML, css</h5>
+      <i class="fa fa-html5" style="font-size:36px;color:#BEB3B6"></i>
+      <h5 class="bold" ">HTML, css</h5>
       <p>Web development project for my mother's business.</p>
       <a href="" class="bold" >More</a>
     </div>
     <div class="w3-container w3-center w3-cell w3-mobile" style="margin-bottom:62px">
-      <i class="fa fa-pencil" style="font-size:36px"></i>
+      <i class="fa fa-pencil" style="font-size:36px;color:#BEB3B6"></i>
       <h5 class="bold">Prototyping</h5>
       <p>Prototyping of a supermarket mobile application in a team.</p>
       <a href="" class="bold">More</a>
     </div>
     <div class="w3-container w3-center w3-cell w3-mobile" style="margin-bottom:62px">
-      <i class="fa fa-bar-chart" style="font-size:36px"></i>
+      <i class="fa fa-bar-chart" style="font-size:36px;color:#BEB3B6"></i>
       <h5 class="bold">Business Intelligence</h5>
       <p>A BI solution designed using MS SQL Server and Qlikview.</p>
       <a href="" class="bold">More</a>
     </div>
     <div class="w3-container w3-center w3-cell w3-mobile" style="margin-bottom:62px">
-      <i class="fa fa-gears" style="font-size:36px"></i>
+      <i class="fa fa-gears" style="font-size:36px;color:#BEB3B6"></i>
       <h5 class="bold">Text mining</h5>
       <p>Preprocessing for a text mining project with python and Linux bash scripts.</p>
       <a href="" class="bold">More</a>
     </div>
     <div class="w3-container w3-center w3-cell w3-mobile" style="margin-bottom:62px">
-      <i class="fa fa-book" style="font-size:36px"></i>
+      <i class="fa fa-book" style="font-size:36px;color:#BEB3B6"></i>
       <h5 class="bold">Thesis</h5>
       <p>Web development project for my mother's business.</p>
       <a href="" class="bold">More</a>
@@ -115,7 +119,7 @@ body, html {
   </div>
 </div>
 <!-- Container (About Section) -->
-<div class="w3-container  own-theme-contrast w3-padding-64" id="about">
+<div class="w3-container  own-theme-secondary w3-padding-64" id="about">
   <h1 class="bold w3-center own-theme-title"">About me</h1>
   <p class="w3-center w3-padding-large"><em>I am an aspiring data scientist.<br>Besides versatile education (both business and IT side) and<br>experience with communication in international envirionments,<br>my main assets include:</em></p>
   <div class="w3-row-padding w3-center" style="margin-top:64px">
@@ -143,7 +147,7 @@ body, html {
   </div>  
 </div>
 <!-- CV-->
-<div class="w3-content own-theme-contrast w3-padding-64 " style="max-width:1400px;" id="cv">
+<div class="w3-content own-theme-secondary w3-padding-64 " style="max-width:1400px;" id="cv">
 
   <!-- The Grid -->
   <div class="w3-row-padding">
@@ -153,51 +157,59 @@ body, html {
     
       <div class="own-theme-light w3-card-2">
         <div class="w3-container">
-          <h1>Curriculum Vitae</h1>
-          <button class="w3-btn bold own-theme-contrast w3-margin">Download as PDF</button>
-          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Student</p>
-          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Helsinki, FI</p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>vivien.holecz@mail.com</p>
-          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>phone?</p>
+          <h1 class="own-theme-red-text">Curriculum Vitae</h1>
+          <button class="w3-btn bold own-theme-dark w3-section">Download as PDF</button>
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large own-theme-red-text"></i>Student</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large own-theme-red-text"></i>Helsinki, FI</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large own-theme-red-text"></i>vivien.holecz@mail.com</p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large own-theme-red-text"></i>phone?</p>
           <hr>
 
-          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
+          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right own-theme-red-text"></i>Skills</b></p>
           <p>MS Excel</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
+          <div class="own-theme-med-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge own-theme-red" style="width:80%">proficient</div>
           </div>
           <p>SQL</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">
-              <div class="w3-center w3-text-white">80%</div>
+          <div class="own-theme-med-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge own-theme-red" style="width:60%">
+              <div class="w3-center w3-text-white">competent</div>
             </div>
           </div>
           <p>Linux</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
+          <div class="own-theme-med-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge own-theme-red" style="width:60%">competent</div>
           </div>
           <p>Python</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
+          <div class="own-theme-med-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge own-theme-red" style="width:40%">advanced beginner</div>
+          </div>
+          <p>Java</p>
+          <div class="own-theme-med-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge own-theme-red" style="width:20%">novice</div>
           </div>
           <p>HTML, css</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
+          <div class="own-theme-med-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge own-theme-red" style="width:40%">advanced beginner</div>
           </div>
           <br>
 
-          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
+          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right own-theme-red-text"></i>Languages</b></p>
           <p>English</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:95%"></div>
+          <div class="own-theme-med-grey w3-round-xlarge">
+            <div class="w3-round-xlarge own-theme-red" style="height:24px;width:95%"></div>
           </div>
           <p>Finnish</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:55%"></div>
+          <div class="own-theme-med-grey w3-round-xlarge">
+            <div class="w3-round-xlarge own-theme-red" style="height:24px;width:55%"></div>
           </div>
           <p>German</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:55%"></div>
+          <div class="own-theme-med-grey w3-round-xlarge">
+            <div class="w3-round-xlarge own-theme-red" style="height:24px;width:55%"></div>
+          </div>
+          <p>Hungarian</p>
+          <div class="own-theme-med-grey w3-round-xlarge">
+            <div class="w3-round-xlarge own-theme-red" style="height:24px;width:100%"></div>
           </div>
           <br>
         </div>
@@ -210,37 +222,37 @@ body, html {
     <div class="w3-twothird">
     
       <div class="w3-container w3-card-2 own-theme-light w3-margin-bottom">
-        <h2 class="w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
+        <h2 class="w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge own-theme-red-text"></i>Work Experience</h2>
         <div class="w3-container">
           <h5 class=""><b>Key Account Operator | Waberer’s International</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul-Oct 2013</h6>
+          <h6 class="own-theme-red-text"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul-Oct 2013</h6>
           <p>Four months internship at the key account<br><i>Tasks: customer service by phone and e-mail in English and Hungarian</i></p>
           <hr>
         </div>
         <div class="w3-container">
           <h5 class=""><b>Administrator | Dacargo</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul 2012 - Jul 2013</h6>
+          <h6 class="own-theme-red-text"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul 2012 - Jul 2013</h6>
           <p>Administrator at the family road transportation business<br><i>Tasks: invoicing, transportation fares calculation, handling archives for a small road transport company</i></p>
           <hr>
         </div>
         <div class="w3-container">
           <h5 class=""><b>Administrator | Scneider Electric</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul - 2011</h6>
+          <h6 class="own-theme-red-text"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul - 2011</h6>
           <p>Three weeks summer internship<br><i>Tasks: administration using MS Excel and SAP</i></p><br>
         </div>
       </div>
 
       <div class="w3-container w3-card-2 own-theme-light">
-        <h2 class="w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+        <h2 class="w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge own-theme-red-text"></i>Education</h2>
         <div class="w3-container">
           <h5 class=""><b>HAAGA-Helia University of Applied Sciences </b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015 - </h6>
+          <h6 class="own-theme-red-text"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015 - </h6>
           <p>Business Information Technology (Bachelor's degree)<br>Topics: Programming, Databases, Data mining, Enterprise Resource Planning, Business Intelligence</p>
           <hr>
         </div>
         <div class="w3-container">
           <h5 class=""><b>Budapest Business School</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2009 - 2014</h6>
+          <h6 class="own-theme-red-text"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2009 - 2014</h6>
           <p>International Business Economics (Bachelor's degree)<br>Topics: Microeconomics, Business English, Statistics, Business mathematics, Market research, Logistics</p>
           <br>
         </div>
