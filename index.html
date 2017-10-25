@@ -5,277 +5,66 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="custom.css?version=1.0">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,600">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif; font-weight: 400}
-body, html {
-    height: 100%;
-    background-color:#fcfaf7;
-    line-height: 1.8;
-}
-
-/* Create a Parallax Effect */
-.bgimg-1{
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url('area.svg');
-    min-height: 380px;
-}
-
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1024px) {
-    .bgimg-1, .bgimg-2, .bgimg-3 {
-        background-attachment: scroll;
-    }
-}
-.own-theme-medium {color:#B299A0!important;background-color:#F6F1F2 !important}
-.own-theme-hover:hover{opacity:0.5}
-.own-theme-contrast{color:#F6EFE6 !important;background-color:#AC9D89 !important}
-.own-theme-red{color:#f3ede4; background-color:#CE1D50}
-.own-theme-secondary{color:#f3ede4 !important;background-color:#B299A0 !important}
-.own-theme-dark-contrast{color:#f3ede4 !important;background-color:#cfc5b4 !important}
-.own-theme-light {color:#B299A0 !important;background-color:#FBF7F8 !important}
-.own-theme-dark {color:#FBF7F8 !important;background-color:#B299A0	 !important}
-.own-theme-red{color:#fcfaf7 !important;background-color:#A70A37 !important}
-.own-theme-light-title{color:#fcfaf7 !important;font-weight:900}
-.own-theme-medium-text{color:#F3EDE4}
-.own-theme-light-text{color:#fcfaf7}
-.own-theme-dark-text{color:#cfc5b4}
-.own-theme-red-text{color:#CE1D50}
-.own-theme-med-grey{background-color:#BEB3B6}
-.own-theme-med-grey-text{color:#BEB3B6}
-.bold{font-weight: 900;}
-</style>
 </head>
 <body>
-
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-   <div class="w3-bar own-theme-medium w3-card-2">
-     <a class="w3-bar-item w3-button w3-padding-large w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-     <a href="#" class="w3-bar-item w3-button  w3-padding-large w3-left"><span class="w3-wide bold" style="color:#CE1D50">Vivien Holecz </span><span class="w3-hide-small"><i>aspiring data scientist</i></span></a>
-     <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-right w3-hide-small "><b>contact</b></a>
-     <a href="#cv" class="w3-bar-item w3-button w3-padding-large w3-right w3-hide-small"><b>CV</b></a>
-     <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-right w3-hide-small"><b>about</b></a>
-     <a href="#" class="w3-bar-item w3-button w3-padding-large w3-right w3-hide-small"><b>projects</b></a>
-   </div>
-</div>
-<!-- Navbar on small screens -->
-<div id="navDemo" class="w3-bar-block own-theme-medium w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-   <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-center"><b>contact</b></a>
-   <a href="#cv" class="w3-bar-item w3-button w3-padding-large w3-center"><b>CV</b></a>
-   <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-center"><b>about</b></a>
-   <a href="#" class="w3-bar-item w3-button w3-padding-large w3-center"><b>projects</b></a>
- </div>
-
-<!-- Area chart with self portrait and name -->
-<div class="bgimg-1 w3-display-container" id="home">
-  <div class="w3-display-middle" style="white-space:nowrap;">
-    <div class="w3-card-4 w3-circle own-theme-light" style="width:180px; margin-left:auto; margin-right:auto">
-    <img class="w3-center w3-circle" style="padding:7px;width:180px;height:180px" src="me.jpg" alt="self-portrait">
-  </div>
-    <h2 class="w3-center w3-padding own-theme-light-text bold w3-hide-small">Vivien Holecz portfolio</h21>
+<!-- Navbar -->
+<div class="w3-bar custom-theme-medium">
+  <img class="w3-left w3-circle w3-section w3-margin-right" style="margin-left:60px;width:80px;height:80px;" src="me.jpg" alt="self-portrait">
+  <p style="margin-top:48px;margin-bottom:49px;"><span class="bold red">Vivien Holecz</span> | aspiring data analyst</p>
+  <hr>
+  <div class="w3-center">
+    <div class="w3-panel w3-large">
+      <a href="index.html" class="custom-button w3-mobile chosen">projects</a>
+      <a href="skills.html" class="custom-button w3-mobile">skills</a>
+      <a href="cv.html" class="custom-button w3-mobile">cv</a>
+    </div>
+  <hr>
   </div>
 </div>
-
-<!-- Container (Projects Section) -->
-<div class="w3-container w3-padding-16 own-theme-red" id="projects">
-  <h2 class="w3-center own-theme-light-text bold w3-padding-small"> My Projects</h2>
-   <div class="w3-cell-row" style="margin-top:36px">
-    <div class="w3-container w3-center w3-cell w3-mobile" style="margin-bottom:62px">
-      <i class="fa fa-html5" style="font-size:36px;color:#BEB3B6"></i>
-      <h5 class="bold" ">HTML, css</h5>
-      <p>Web development project for my mother's business.</p>
-      <a href="" class="bold" >More</a>
+<!--*************************************************PROJECTS*************************************************-->
+<div id="projects" class="w3-container">
+  <div class="w3-content custom-theme-medium custom-card">
+    <i class="fa fa-html5 w3-xxlarge red"><span class="w3-xlarge">&ensp;Project #1</span></i>
+    <p class="bold w3-large">HTML, css</p>
+    <p>Web development project for my mother's business.</p>
+    <br>
+    <a href="#" class="red">Read more</a>
     </div>
-    <div class="w3-container w3-center w3-cell w3-mobile" style="margin-bottom:62px">
-      <i class="fa fa-pencil" style="font-size:36px;color:#BEB3B6"></i>
-      <h5 class="bold">Prototyping</h5>
-      <p>Prototyping of a supermarket mobile application in a team.</p>
-      <a href="" class="bold">More</a>
+  </div>
+  <div class="w3-content custom-theme-medium custom-card">
+    <i class="fa fa-pencil w3-xxlarge red"><span class="w3-xlarge">&ensp;Project #2</span></i>
+    <p class="bold w3-large">Prototyping</p>
+    <p>Prototyping of a supermarket mobile application in a team.</p>
+    <br>
+    <a href="#" class="red">Read more</a>
     </div>
-    <div class="w3-container w3-center w3-cell w3-mobile" style="margin-bottom:62px">
-      <i class="fa fa-bar-chart" style="font-size:36px;color:#BEB3B6"></i>
-      <h5 class="bold">Business Intelligence</h5>
-      <p>A BI solution designed using MS SQL Server and Qlikview.</p>
-      <a href="" class="bold">More</a>
+  </div>
+  <div class="w3-content custom-theme-medium custom-card">
+    <i class="fa fa-bar-chart w3-xxlarge red"><span class="w3-xlarge">&ensp;Project #3</span></i>
+    <p class="bold w3-large">Business Intelligence</p>
+    <p>A BI solution designed using MS SQL Server and Qlikview.</p>
+    <br>
+    <a href="#" class="red">Read more</a>
     </div>
-    <div class="w3-container w3-center w3-cell w3-mobile" style="margin-bottom:62px">
-      <i class="fa fa-gears" style="font-size:36px;color:#BEB3B6"></i>
-      <h5 class="bold">Text mining</h5>
-      <p>Preprocessing for a text mining project with python and Linux bash scripts.</p>
-      <a href="" class="bold">More</a>
+  </div>
+  <div class="w3-content custom-theme-medium custom-card">
+    <i class="fa fa-gears w3-xxlarge red"><span class="w3-xlarge">&ensp;Project #4</span></i>
+    <p class="bold w3-large">Text mining</p>
+    <p>Preprocessing for a text mining project with python and Linux bash scripts.</p>
+    <br>
+    <a href="#" class="red">Read more</a>
     </div>
-    <div class="w3-container w3-center w3-cell w3-mobile" style="margin-bottom:62px">
-      <i class="fa fa-book" style="font-size:36px;color:#BEB3B6"></i>
-      <h5 class="bold">Thesis</h5>
-      <p>Web development project for my mother's business.</p>
-      <a href="" class="bold">More</a>
+  </div>
+  <div class="w3-content custom-theme-medium custom-card">
+    <i class="fa fa-book w3-xxlarge red"><span class="w3-xlarge">&ensp;Project #5</span></i>
+    <p class="bold w3-large">Thesis</p>
+    <p>Twitter streaming with Spark, MySQL, Flask and d3.js</p>
+    <br>
+    <a href="#" class="red">Read more</a>
     </div>
   </div>
 </div>
-<!-- Container (About Section) -->
-<div class="w3-container  own-theme-secondary w3-padding-64" id="about">
-  <h1 class="bold w3-center own-theme-title"">About me</h1>
-  <p class="w3-center w3-padding-large"><em>I am an aspiring data scientist.<br>Besides versatile education (both business and IT side) and<br>experience with communication in international envirionments,<br>my main assets include:</em></p>
-  <div class="w3-row-padding w3-center" style="margin-top:64px">
-      <div class="w3-quarter w3-padding-large">
-        <i class="fa fa-lightbulb-o w3-margin-bottom w3-jumbo own-theme-red-text"></i>
-        <p class="w3-large bold">Fast learning</p>
-        <p>I am driven by curiosity. Seeking out new things to learn all the time keeps my mind busy with new discoveries.</p>
-      </div>
-      <div class="w3-quarter w3-padding-large">
-        <i class="material-icons w3-margin-bottom w3-jumbo own-theme-red-text">hearing</i>
-        <p class="w3-large bold ">Attentive listenning</p>
-        <p>Being more of an introvert, I am good at listenning to others and also developed a skill to identify needs and fulfill expectations.</p>
-      </div>
-      <div class="w3-quarter w3-padding-large">
-        <i class="fa fa-pie-chart w3-margin-bottom w3-jumbo own-theme-red-text"></i>
-        <p class="w3-large bold">Analythical thinking</p>
-        <p>I have a problem-solving mindset that affects my whole life, from planning studies to hobby activities.</p>
-      </div>
-      <div class="w3-quarter w3-padding-large">
-        <i class="fa fa-group w3-margin-bottom w3-jumbo own-theme-red-text"></i>
-        <p class="w3-large bold">Teamwork</p>
-        <p>As a team player, my strengths are creating ideas and keeping an eye on deadlines to focus on the right things.</p>
-      </div>
-    </div>
-  </div>  
-</div>
-<!-- CV-->
-<div class="w3-content own-theme-secondary w3-padding-64 " style="max-width:1400px;" id="cv">
-
-  <!-- The Grid -->
-  <div class="w3-row-padding">
-  
-    <!-- Left Column -->
-    <div class="w3-third">
-    
-      <div class="own-theme-light w3-card-2">
-        <div class="w3-container">
-          <h1 class="own-theme-red-text">Curriculum Vitae</h1>
-          <button class="w3-btn bold own-theme-dark w3-section">Download as PDF</button>
-          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large own-theme-red-text"></i>Student</p>
-          <p><i class="fa fa-home fa-fw w3-margin-right w3-large own-theme-red-text"></i>Helsinki, FI</p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large own-theme-red-text"></i>vivien.holecz@mail.com</p>
-          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large own-theme-red-text"></i>phone?</p>
-          <hr>
-
-          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right own-theme-red-text"></i>Skills</b></p>
-          <p>MS Excel</p>
-          <div class="own-theme-med-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge own-theme-red" style="width:80%">proficient</div>
-          </div>
-          <p>SQL</p>
-          <div class="own-theme-med-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge own-theme-red" style="width:60%">
-              <div class="w3-center w3-text-white">competent</div>
-            </div>
-          </div>
-          <p>Linux</p>
-          <div class="own-theme-med-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge own-theme-red" style="width:60%">competent</div>
-          </div>
-          <p>Python</p>
-          <div class="own-theme-med-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge own-theme-red" style="width:40%">advanced beginner</div>
-          </div>
-          <p>Java</p>
-          <div class="own-theme-med-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge own-theme-red" style="width:20%">novice</div>
-          </div>
-          <p>HTML, css</p>
-          <div class="own-theme-med-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge own-theme-red" style="width:40%">advanced beginner</div>
-          </div>
-          <br>
-
-          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right own-theme-red-text"></i>Languages</b></p>
-          <p>English</p>
-          <div class="own-theme-med-grey w3-round-xlarge">
-            <div class="w3-round-xlarge own-theme-red" style="height:24px;width:95%"></div>
-          </div>
-          <p>Finnish</p>
-          <div class="own-theme-med-grey w3-round-xlarge">
-            <div class="w3-round-xlarge own-theme-red" style="height:24px;width:55%"></div>
-          </div>
-          <p>German</p>
-          <div class="own-theme-med-grey w3-round-xlarge">
-            <div class="w3-round-xlarge own-theme-red" style="height:24px;width:55%"></div>
-          </div>
-          <p>Hungarian</p>
-          <div class="own-theme-med-grey w3-round-xlarge">
-            <div class="w3-round-xlarge own-theme-red" style="height:24px;width:100%"></div>
-          </div>
-          <br>
-        </div>
-      </div><br>
-
-    <!-- End Left Column -->
-    </div>
-
-    <!-- Right Column -->
-    <div class="w3-twothird">
-    
-      <div class="w3-container w3-card-2 own-theme-light w3-margin-bottom">
-        <h2 class="w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge own-theme-red-text"></i>Work Experience</h2>
-        <div class="w3-container">
-          <h5 class=""><b>Key Account Operator | Waberer’s International</b></h5>
-          <h6 class="own-theme-red-text"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul-Oct 2013</h6>
-          <p>Four months internship at the key account<br><i>Tasks: customer service by phone and e-mail in English and Hungarian</i></p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class=""><b>Administrator | Dacargo</b></h5>
-          <h6 class="own-theme-red-text"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul 2012 - Jul 2013</h6>
-          <p>Administrator at the family road transportation business<br><i>Tasks: invoicing, transportation fares calculation, handling archives for a small road transport company</i></p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class=""><b>Administrator | Scneider Electric</b></h5>
-          <h6 class="own-theme-red-text"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul - 2011</h6>
-          <p>Three weeks summer internship<br><i>Tasks: administration using MS Excel and SAP</i></p><br>
-        </div>
-      </div>
-
-      <div class="w3-container w3-card-2 own-theme-light">
-        <h2 class="w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge own-theme-red-text"></i>Education</h2>
-        <div class="w3-container">
-          <h5 class=""><b>HAAGA-Helia University of Applied Sciences </b></h5>
-          <h6 class="own-theme-red-text"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015 - </h6>
-          <p>Business Information Technology (Bachelor's degree)<br>Topics: Programming, Databases, Data mining, Enterprise Resource Planning, Business Intelligence</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class=""><b>Budapest Business School</b></h5>
-          <h6 class="own-theme-red-text"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2009 - 2014</h6>
-          <p>International Business Economics (Bachelor's degree)<br>Topics: Microeconomics, Business English, Statistics, Business mathematics, Market research, Logistics</p>
-          <br>
-        </div>
-      </div>
-
-    <!-- End Right Column -->
-    </div>
-    
-  <!-- End Grid -->
-  </div>
-  
-  <!-- End Page Container -->
-</div>
-<script>
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-</script>
-</body>
-</html>
+</body> 
