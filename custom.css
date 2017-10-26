@@ -1,5 +1,5 @@
 body,h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif;color:#836967;font-weight:300;line-height:1;background-repeat: repeat-xy;}
-body {background-image: url("bgwarm.png");}
+body {background-image: url("https://git-scm.com/images/bg/body.jpg");}
 h1,h2,h3,h4,h5,h6{color:#CE1D50;}
 hr{margin:0px 0;border-top: 1px solid #E2DACC;}
 .bold {font-weight:600;}
