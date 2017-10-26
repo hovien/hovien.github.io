@@ -1,4 +1,4 @@
-body,h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif;color:#8e7b5b;font-weight:300;line-height:1;background-repeat: repeat-xy;}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif;color:#837567;font-weight:300;line-height:1;background-repeat: repeat-xy;}
 body {background-image: url("bgwarm.png");}
 h1,h2,h3,h4,h5,h6{color:#CE1D50;}
 hr{margin:0px 0;border-top: 1px solid #E2DACC;}
@@ -10,7 +10,7 @@ hr{margin:0px 0;border-top: 1px solid #E2DACC;}
 .chosen{color:#CE1D50;font-weight:600}
 .custom-button{text-decoration:none;cursor:pointer;padding-left:32px;padding-right:32px;}
 .custom-button:hover{background-color:inherit;color:#CE1D50;-webkit-transition-duration:0.2s;transition-duration:0.2s;}
-.custom-theme-medium {color:#8e7b5b!important;background-color:#FCFAF7 !important}
-.custom-theme-light {color:#8e7b5b!important;background-color:#E2DACC !important}
-.custom-theme-dark {color:#E2DACC!important;background-color:#8e7b5b !important}
+.custom-theme-medium {color:#837567!important;background-color:#FCFAF7 !important}
+.custom-theme-light {color:#837567!important;background-color:#E2DACC !important}
+.custom-theme-dark {color:#E2DACC!important;background-color:#837567 !important}
 .custom-card{padding:32px 32px 16px 32px;margin-top:16px;margin-bottom:16px;border:1px solid #E2DACC;}
