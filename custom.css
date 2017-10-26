@@ -1,16 +1,16 @@
-body,h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif;color:#abab98;font-weight:300;line-height:1;background-repeat: repeat-xy;}
-body {background-image: url("https://git-scm.com/images/bg/body.jpg");}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif;color:#6c6c6c;font-weight:300;line-height:1;background-repeat: repeat-xy;}
+body {background-image: url("bg.jpg");}
 h1,h2,h3,h4,h5,h6{color:#CE1D50;}
-hr{margin:0px 0;border-top: 1px solid #cfcfc4;}
+hr{margin:0px 0;border-top: 1px solid #cfcfcf;}
 .bold {font-weight:600;}
 .red{color:#CE1D50;}
-.red-button{color:#f9f9f4;background-color:#CE1D50;}
-.title{color:green!important; text-decoration:none;padding:0px 6px!important;}
+.red-button{color:#f8f8f8;background-color:#CE1D50;}
+.title{text-decoration:none;padding:0px 6px!important;}
 .title-row{margin:48px 16px 49px 0px;}
 .chosen{color:#CE1D50;font-weight:600}
 .custom-button{text-decoration:none;cursor:pointer;padding-left:32px;padding-right:32px;}
 .custom-button:hover{background-color:inherit;color:#CE1D50;-webkit-transition-duration:0.2s;transition-duration:0.2s;}
-.custom-theme-medium {color:#abab98!important;background-color:#f9f9f4 !important}
-.custom-theme-light {color:#abab98!important;background-color:#cfcfc4 !important}
-.custom-theme-dark {color:#cfcfc4!important;background-color:#abab98 !important}
-.custom-card{padding:32px 32px 16px 32px;margin-top:16px;margin-bottom:16px;border:1px solid #cfcfc4;}
+.custom-theme-medium {color:#6c6c6c!important;background-color:#f8f8f8 !important}
+.custom-theme-light {color:#6c6c6c!important;background-color:#cfcfcf !important}
+.custom-theme-dark {color:#f8f8f8!important;background-color:#6c6c6c !important}
+.custom-card{padding:32px 32px 16px 32px;margin-top:16px;margin-bottom:16px;border:1px solid #cfcfcf;}
