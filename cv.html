@@ -11,21 +11,38 @@
 </head>
 <body>
 <!--*************************************************NAVBAR*************************************************-->
-<div class="w3-bar custom-theme-medium">
-  <img class="w3-left w3-circle w3-section" style="margin-left:60px;width:80px;height:80px;" src="me.jpg" alt="self-portrait">
+<div class="w3-bar custom-theme-medium w3-hide-small">
+  <a href="index.html">
+    <img class="w3-left w3-circle w3-section" style="margin-left:60px;width:80px;height:80px;" src="me.jpg" alt="self-portrait">
+  </a>
   <div class="title-row w3-large">  
-    <a class="title" href="#"><span class="bold red">Vivien Holecz</span> | aspiring data analyst</a>
+    <a class="title" href="index.html"><span class="bold red">Vivien Holecz</span> | aspiring data analyst</a>
     <a class="w3-bar-item w3-right title red w3-xlarge" href="https://www.linkedin.com/in/vivienholecz"><i class="fa fa-linkedin-square"></i></a>
     <a class="w3-bar-item w3-right title red w3-xlarge" href="https://github.com/hovien"><i class="fa fa-github"></i></a>
   </div>
   <hr>
   <div class="w3-center">
     <div class="w3-panel w3-large">
-      <a href="index.html" class="custom-button w3-mobile">projects</a>
-      <a href="skills.html" class="custom-button w3-mobile">skills</a>
-      <a href="cv.html" class="custom-button w3-mobile chosen">cv</a>
+      <a href="projects.html" class="custom-button w3-mobile w3-margin">projects</a>
+      <a href="index.html" class="custom-button w3-mobile w3-margin">skills</a>
+      <a href="cv.html" class="custom-button w3-mobile chosen w3-margin">cv</a>
     </div>
   <hr>
+  </div>
+</div>
+<!--*************************************************NAVBAR - SMALL*************************************************-->
+<div class="w3-top">
+  <div class="w3-bar custom-theme-medium w3-hide-large w3-hide-medium">
+      <div class="w3-bar-item w3-large bold red" style="padding-top:13px;">Vivien Holecz</div>
+      <button class="w3-bar-item w3-button w3-right" onclick="openMenu()"><i class="w3-xlarge bold fa fa-bars "></i></button>
+      <hr style="margin-top:40px;">
+      <div id="menu" class="w3-large w3-center w3-hide">
+        <a href="projects.html" class="custom-button w3-mobile w3-section">projects</a>
+        <a href="index.html" class="custom-button w3-mobile w3-section">skills</a>
+        <a href="cv.html" class="custom-button w3-mobile chosen w3-section">cv</a>
+        <hr>
+      </div>
+    </div>
   </div>
 </div>
 <!--*************************************************CV*************************************************-->
@@ -40,7 +57,7 @@
       <div class="custom-theme-medium   custom-card">
         <div class="w3-container">
           <h1 class="w3-xlarge">Curriculum Vitae</h1>
-          <button class="w3-btn w3-round-xlarge bold w3-section red-button">Download as PDF</button>
+          <button class="w3-round-xlarge bold w3-section w3-button red-button">Download as PDF</button>
           <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large red"></i>Student</p>
           <p><i class="fa fa-home fa-fw w3-margin-right w3-large red"></i>Helsinki, FI</p>
           <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large red"></i>vivien.holecz@mail.com</p>
@@ -148,7 +165,19 @@
   </div>
 <!--*************************************************FOOTER*************************************************-->
 <footer class="w3-container w3-center custom-theme-dark w3-padding-32" >
+<a class="title w3-xlarge" href="https://www.linkedin.com/in/vivienholecz"><i class="fa fa-linkedin-square"></i></a>
+<a class="title w3-xlarge" href="https://github.com/hovien"><i class="fa fa-github"></i></a>
 <p>2017 - created by Vivien Holecz</p>
 <p>Powered by <a href="https://www.w3schools.com/w3css/">w3.css</a></p>
 </footer>
+<script>
+function openMenu() {
+    var x = document.getElementById("menu");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
 </body> 

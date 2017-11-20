@@ -5,10 +5,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="custom.css">
+<link rel="stylesheet" href="custom.css?version=1.0">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,600">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
 <!--*************************************************NAVBAR*************************************************-->
@@ -24,8 +23,8 @@
   <hr>
   <div class="w3-center">
     <div class="w3-panel w3-large">
-      <a href="projects.html" class="custom-button w3-mobile w3-margin">projects</a>
-      <a href="index.html" class="custom-button w3-mobile chosen w3-margin">skills</a>
+      <a href="projects.html" class="custom-button w3-mobile chosen w3-margin">projects</a>
+      <a href="index.html" class="custom-button w3-mobile w3-margin">skills</a>
       <a href="cv.html" class="custom-button w3-mobile w3-margin">cv</a>
     </div>
   <hr>
@@ -38,43 +37,54 @@
       <button class="w3-bar-item w3-button w3-right" onclick="openMenu()"><i class="w3-xlarge bold fa fa-bars "></i></button>
       <hr style="margin-top:40px;">
       <div id="menu" class="w3-large w3-center w3-hide">
-        <a href="projects.html" class="custom-button w3-mobile w3-section">projects</a>
-        <a href="index.html" class="custom-button w3-mobile chosen w3-section">skills</a>
+        <a href="projects.html" class="custom-button w3-mobile chosen w3-section">projects</a>
+        <a href="index.html" class="custom-button w3-mobile w3-section">skills</a>
         <a href="cv.html" class="custom-button w3-mobile w3-section">cv</a>
         <hr>
       </div>
     </div>
   </div>
 </div>
-<!--*************************************************SKILLS*************************************************-->
-<div class="w3-display-container">
-  <div class="w3-row w3-padding-64">
-    <p class="w3-col w3-hide-small m2 l3"></p>
-    <p class="w3-col s12 m8 l6 w3-center w3-large w3-padding">Welcome to my portfolio site.<br><br>I am soon to be graduating from Haaga-Helia UAS and looking for an opportunity to apply my knowledge about data analysis in real life.<br><br>Besides versatile education (both business and IT side) and experience with communication in international environments, my main assets include:</p>
-    <p class="w3-col w3-hide-small m2 l3"></p>
+<!--*************************************************PROJECTS*************************************************-->
+  <div class="w3-content custom-theme-medium custom-card">
+    <i class="fa fa-html5 w3-xxlarge red"><span class="w3-xlarge">&ensp;Project #1</span></i>
+    <p class="bold w3-large">HTML, css</p>
+    <p>Web development project for my mother's business.</p>
+    <br>
+    <a href="#" class="red">Read more</a>
   </div>
-  <div class="w3-row-padding w3-center w3-padding">
-    <div class="w3-col s12 m6 l3 w3-padding-32">
-      <i class="fa fa-lightbulb-o w3-margin-bottom w3-jumbo red"></i>
-      <p class="w3-large bold">Fast learning</p>
-      <p>I am driven by curiosity. Seeking out new things to learn all the time keeps my mind busy with new discoveries.</p>
+  <div class="w3-content custom-theme-medium custom-card">
+    <i class="fa fa-pencil w3-xxlarge red"><span class="w3-xlarge">&ensp;Project #2</span></i>
+    <p class="bold w3-large">Prototyping</p>
+    <p>Prototyping of a supermarket mobile application in a team.</p>
+    <br>
+    <a href="#" class="red">Read more</a>
     </div>
-    <div class="w3-col s12 m6 l3 w3-padding-32">
-      <i class="material-icons w3-margin-bottom w3-jumbo red">hearing</i>
-      <p class="w3-large bold ">Attentive listenning</p>
-      <p>Being more of an introvert, I am good at listenning to others and also developed a skill to identify needs and fulfill expectations.</p>
+  </div>
+  <div class="w3-content custom-theme-medium custom-card">
+    <i class="fa fa-bar-chart w3-xxlarge red"><span class="w3-xlarge">&ensp;Project #3</span></i>
+    <p class="bold w3-large">Business Intelligence</p>
+    <p>A BI solution designed using MS SQL Server and Qlikview.</p>
+    <br>
+    <a href="#" class="red">Read more</a>
     </div>
-    <div class="w3-col s12 m6 l3 w3-padding-32">
-      <i class="fa fa-pie-chart w3-margin-bottom w3-jumbo red"></i>
-      <p class="w3-large bold">Analythical thinking</p>
-      <p>I have a problem-solving mindset that affects my whole life, from planning studies to hobby activities.</p>
+  </div>
+  <div class="w3-content custom-theme-medium custom-card">
+    <i class="fa fa-gears w3-xxlarge red"><span class="w3-xlarge">&ensp;Project #4</span></i>
+    <p class="bold w3-large">Text mining</p>
+    <p>Preprocessing for a text mining project with python and Linux bash scripts.</p>
+    <br>
+    <a href="#" class="red">Read more</a>
     </div>
-    <div class="w3-col s12 m6 l3 w3-padding-32">
-      <i class="fa fa-group w3-margin-bottom w3-jumbo red"></i>
-      <p class="w3-large bold">Teamwork</p>
-      <p>As a team player, my strengths are creating ideas and keeping an eye on deadlines to focus on the right things.</p>
-    </div>      
-  </div>  
+  </div>
+  <div class="w3-content custom-theme-medium custom-card">
+    <i class="fa fa-book w3-xxlarge red"><span class="w3-xlarge">&ensp;Project #5</span></i>
+    <p class="bold w3-large">Thesis</p>
+    <p>Twitter streaming with Spark, MySQL, Flask and d3.js</p>
+    <br>
+    <a href="#" class="red">Read more</a>
+    </div>
+  </div>
 </div>
 <!--*************************************************FOOTER*************************************************-->
 <footer class="w3-container w3-center custom-theme-dark w3-padding-32" >
@@ -93,5 +103,4 @@ function openMenu() {
     }
 }
 </script>
-
 </body> 
