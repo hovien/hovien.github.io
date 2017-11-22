@@ -9,7 +9,8 @@ hr{margin:0px 0;border-top: 1px solid #cfcfcf;}
 .title-row{margin:48px 16px 49px 0px;}
 .chosen{color:#CE1D50;font-weight:600}
 .custom-button{text-decoration:none;cursor:pointer;padding-left:32px;padding-right:32px;}
-.custom-button:hover{background-color:inherit;color:#CE1D50;-webkit-transition-duration:0.2s;transition-duration:0.2s;}
+.custom-button:hover{background-color:inherit !important;color:#CE1D50;-webkit-transition-duration:0.2s;transition-duration:0.2s;}
+.custom-no-padding{padding:0px 0px;}
 .custom-theme-medium {color:#6c6c6c!important;background-color:#f8f8f8 !important}
 .custom-theme-light {color:#6c6c6c!important;background-color:#cfcfcf !important}
 .custom-theme-dark {color:#f8f8f8!important;background-color:#6c6c6c !important}

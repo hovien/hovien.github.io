@@ -46,44 +46,44 @@
   </div>
 </div>
 <!--*************************************************PROJECTS*************************************************-->
-  <div class="w3-content custom-theme-medium custom-card">
+<div class="w3-content">
+  <div class="w3-container custom-theme-medium custom-card">
     <i class="fa fa-html5 w3-xxlarge red"><span class="w3-xlarge">&ensp;Project #1</span></i>
     <p class="bold w3-large">HTML, css</p>
-    <p>Web development project for my mother's business.</p>
-    <br>
-    <a href="#" class="red">Read more</a>
+    <p>Web development project for my mother's business</p>
+    <p>This is an example website that I coded in the beginning of my studies in Haaga-Helia UAS. The aim of the site is to showcase my mother's work and attract new customers. I paid special attention to the color scheme and design, because esthetics are a vital part of her business as well. The html and the css code was written by me. The main source of reference was the w3schools.com website.<br><br><a class="red" target="_blank" href="http://myy.haaga-helia.fi/~a1500567/Site1">Link to site</a></p>
   </div>
-  <div class="w3-content custom-theme-medium custom-card">
-    <i class="fa fa-pencil w3-xxlarge red"><span class="w3-xlarge">&ensp;Project #2</span></i>
+  <div class="w3-container custom-theme-medium custom-card">
+    <i class="fa fa-gears w3-xxlarge red"><span class="w3-xlarge">&ensp;Project #2</span></i>
+    <p class="bold w3-large">Text mining</p>
+    <p>Preprocessing for a text mining project with python and Linux bash scripts.</p>
+    <p>This was a voluntary individual project that aimed at analyzing interview data using Python for preprocessing and Weka for text mining. The work involved writing linux bash scripts, python code and using open source tools for part-of-speech tagging and stemming. A more detailed description and the scripts can be found on <a class="red" href="https://github.com/hovien/DataProject">github</a>.</p>
+    
+  </div>
+  <div class="w3-container custom-theme-medium custom-card">
+    <i class="fa fa-book w3-xxlarge red"><span class="w3-xlarge">&ensp;Project #3</span></i>
+    <p class="bold w3-large">Thesis</p>
+    <p>Twitter streaming with Spark, MySQL, Flask and d3.js</p>
+    <p>The goal of the thesis work was to collect market information from Twitter for a local company. Spark Streaming was used for streaming and filtering the tweets. The processed tweets are saved in a MySQL database, and they can be viewed on a website created with Flask and d3.js. The scripts for Streaming can be viewed <a class="red" href="https://github.com/hovien/SparkApp">here</a> and the code of the web application <a class="red" href="https://github.com/hovien/FlaskWebApp">here</a>. The output website is accessible from <a class="red" href="http://165.227.158.183/">this link</a>.</p>
+  </div>
+  <div class="w3-container custom-theme-medium custom-card w3-hide">
+    <i class="fa fa-pencil w3-xxlarge red"><span class="w3-xlarge">&ensp;Project #4</span></i>
     <p class="bold w3-large">Prototyping</p>
     <p>Prototyping of a supermarket mobile application in a team.</p>
-    <br>
-    <a href="#" class="red">Read more</a>
-    </div>
+    <p>Try </p>
   </div>
-  <div class="w3-content custom-theme-medium custom-card">
-    <i class="fa fa-bar-chart w3-xxlarge red"><span class="w3-xlarge">&ensp;Project #3</span></i>
+  <div class="w3-container custom-theme-medium custom-card w3-hide">
+    <i class="fa fa-bar-chart w3-xxlarge red"><span class="w3-xlarge">&ensp;Project #5</span></i>
     <p class="bold w3-large">Business Intelligence</p>
     <p>A BI solution designed using MS SQL Server and Qlikview.</p>
     <br>
-    <a href="#" class="red">Read more</a>
-    </div>
-  </div>
-  <div class="w3-content custom-theme-medium custom-card">
-    <i class="fa fa-gears w3-xxlarge red"><span class="w3-xlarge">&ensp;Project #4</span></i>
-    <p class="bold w3-large">Text mining</p>
-    <p>Preprocessing for a text mining project with python and Linux bash scripts.</p>
-    <br>
-    <a href="#" class="red">Read more</a>
-    </div>
-  </div>
-  <div class="w3-content custom-theme-medium custom-card">
-    <i class="fa fa-book w3-xxlarge red"><span class="w3-xlarge">&ensp;Project #5</span></i>
-    <p class="bold w3-large">Thesis</p>
-    <p>Twitter streaming with Spark, MySQL, Flask and d3.js</p>
-    <br>
-    <a href="#" class="red">Read more</a>
-    </div>
+    <p id="p3"class="w3-hide">Try </p>
+    <button id="m3" class="w3-button custom-button custom-no-padding w3-hide w3-show" onclick="openProject('p3', 'l3', 'm3')">
+      <p class="red">Show more</p>
+    </button>
+    <button id="l3" class="w3-button custom-button custom-no-padding w3-hide" onclick="closeProject('p3', 'l3', 'm3')">
+      <p class="red">Show less</p>
+    </button>
   </div>
 </div>
 <!--*************************************************FOOTER*************************************************-->
@@ -94,6 +94,16 @@
 <p>Powered by <a href="https://www.w3schools.com/w3css/">w3.css</a></p>
 </footer>
 <script>
+function showElement(elem){
+    if (elem.className.indexOf("w3-show") == -1) {
+        elem.className += " w3-show";
+    }
+}
+
+function hideElement(elem){
+    elem.className = elem.className.replace(" w3-show", "");
+}
+
 function openMenu() {
     var x = document.getElementById("menu");
     if (x.className.indexOf("w3-show") == -1) {
@@ -101,6 +111,27 @@ function openMenu() {
     } else { 
         x.className = x.className.replace(" w3-show", "");
     }
+}
+function openProject(arg1, arg2, arg3) {
+    var x = document.getElementById(arg1);
+    var y = document.getElementById(arg2);
+    var z = document.getElementById(arg3);
+    
+    showElement(x);
+    showElement(y);
+    hideElement(z);
+    
+}
+
+function closeProject(arg1, arg2, arg3) {
+    var x = document.getElementById(arg1);
+    var y = document.getElementById(arg2);
+    var z = document.getElementById(arg3);
+    
+    hideElement(x);
+    hideElement(y);
+    showElement(z);
+    
 }
 </script>
 </body> 
